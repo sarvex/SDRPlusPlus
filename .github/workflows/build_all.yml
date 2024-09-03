@@ -330,7 +330,7 @@ jobs:
 
         steps:
         - name: Download All Builds
-          uses: actions/download-artifact@v3
+          uses: actions/download-artifact@v4.1.7
 
         - name: Create Archive
           run: >
@@ -357,7 +357,7 @@ jobs:
 
         steps:
         - name: Download All Builds
-          uses: actions/download-artifact@v3
+          uses: actions/download-artifact@v4.1.7
 
         - name: Update Nightly
           run: gh release upload nightly sdrpp_all/* -R ${{github.repository}} --clobber
